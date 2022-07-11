@@ -20,8 +20,17 @@ function unshift(arr, item) {
   }
   return firstSpace;
 }
+function hasDuplicates(arr) {
+  for (let i = 0; i < arr.length; i++){
+    for (let j = i + 1; j < arr.length; j++){
+      if(i !== j){
+      } 
+    }
+  }
+  return false
+}
 
-module.exports = { push, unshift };
+module.exports = { push, unshift, hasDuplicates };
 
 // const array = ['a', 'b', 'c'];
 // console.log (push(array, d))
