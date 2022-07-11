@@ -10,15 +10,15 @@ function push(arr, item) {
 // set element by index
 
 function unshift(arr, item) {
-  const firstSpace = arr[0];
+  const firstSpace = arr[1 - arr.length];
   // create a variable that holds onto the position we are trying to push something into
   // loop through the array
   // add new item
   // return new length of array
   for (let i = arr.length - 1; i > arr.length; i--) {
-    firstSpace.push(item);
+    arr[i] = item;
   }
-  return arr.length;
+  return firstSpace;
 }
 
 module.exports = { push, unshift };
