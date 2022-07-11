@@ -1,8 +1,6 @@
 function push(arr, item) {
-    // arr.length = arr.length -1;
-    for(let i = 0; i < arr.length; i++);
-
-    // arr[item] = arr [item + 1]
+    const i = arr.length;
+    arr[i] = item;
     return arr.length; 
 }
 // read the array length 
